@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+<title>Qiita武蔵野AdventCalendar_2017の動作確認ページ１</title>
+<meta charset="utf-8">
+
+<!-- まずは、jsPDFを読み込んでおく。以降の改造の都合、debugのほうを利用する。 -->
+<script src='./module/libs/jspdf.debug_original.js' type='text/javascript'></script>
+
+</head>
+
+<body>
+
+<!-- 出力したいPDFを定義する。 -->
+<script type="text/javascript">
+function createPDFObject(varIntX){
+	alert("作成に少々時間がかかる場合があります。\nこのまま少々お待ちくださいませ。");
+	//印字文字列情報の生成
+	var doc = new jsPDF('p', 'pt', 'a4', false);
+		doc.setFontSize(20);
+		doc.text(60, 150, 'Musashino-Advent-Calendar_2017');
+		doc.text(100, 200, 'Try Japanese output with jsPDF.');
+		doc.save( '武蔵野AdventCalendar_2017の最終日_001.pdf')
+}
+</script>
+
+<!-- 出力ページの見出しを定義する。 -->
+<h1>jsPDFによる出力テストページ</h1>
+
+<!-- createPDF関数を呼び出して、PDFを出力させるスイッチをOnにする。 -->
+<script type="text/javascript">
+	createPDFObject()
+</script>
+
+</body>
+</html>
