@@ -24,12 +24,12 @@ function createPDFObject(varIntX){
 </script>
 
 <!-- 出力ページの見出しを定義する。 -->
-<h1>jsPDFによる出力テストページ</h1>
+<h1>jsPDFによる出力テストページ１</h1>
+～まずは本家のjsPDFライブラリをそのまま使ってみたPDFのイメージ～<br>
+　※ このままだと日本語出力できないので、英語の文章をPDFにしています。<br>
 
-<!-- createPDF関数を呼び出して、PDFを出力させるスイッチをOnにする。 -->
-<script type="text/javascript">
-	createPDFObject()
-</script>
+<!-- createPDF関数を呼び出して、PDFを出力させるリンクを載せる。 -->
+<a href="#" onclick="createPDFObject();">このリンクを開き、jsPDFで生成するPDFを取得する。</a>
 
 </body>
 </html>

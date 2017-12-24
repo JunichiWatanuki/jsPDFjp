@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>Qiita武蔵野AdventCalendar_2017の動作確認ページ４</title>
+<title>Qiita武蔵野AdventCalendar_2017の動作確認ページ</title>
 <meta charset="utf-8">
 
 <!-- まずは、改造したjsPDFを読み込んでおく。 -->
@@ -67,11 +67,10 @@ function createPDFObject(varIntX){
 
 <!-- 出力ページの見出しを定義する。 -->
 <h1>jsPDFによる出力テストページ</h1>
+～最終的に作りたいPDFのイメージ～<br>
 
-<!-- createPDF関数を呼び出して、PDFを出力させるスイッチをOnにする。 -->
-<script type="text/javascript">
-	createPDFObject()
-</script>
+<!-- createPDF関数を呼び出して、PDFを出力させるリンクを載せる。 -->
+<a href="#" onclick="createPDFObject();">このリンクを開き、jsPDFで生成するPDFを取得する。</a>
 
 </body>
 </html>
